@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Ran against all 5000 datasets, this was slightly faster than sort3 in the Random/Reversed datasets, but it had a significant edge in the sorted, where it outpaced even sort2. This means it checked for pre-sort and terminated rather than sorting, but it was still slow, meaning it was bubble sort. Random5k: 0.89 Sorted 0.035 Reversed: 0.073
+
+sort2 uses: Merge Sort
+
+How do you know?: Ran against all 5000 datasets, this was the fastest of the 3 sorts. Outperforming the other 2 significantly, in all but Sort1 on the Sorted dataset, since both check against prev. sorted data. Random5k: 0.51 Sorted: 0.33 Reversed: 0.043
+
+sort3 uses: Selection Sort
+
+How do you know?: Ran against all 5000 datasets, this was by far the slowest, and the Sorted dataset gave it away, since the sorted time was nearly double the rest of the times. Random5k: 0.92 Sorted: 0.53 Reversed: 0.098
